@@ -1,7 +1,7 @@
 # virtualCine
  CineVirtual
 
- - joseArgz
+ - JoseArgz
  - Ron
  - Renato
  - Joseph

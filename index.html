@@ -4,15 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
+    <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Llamados -->
     <link rel="stylesheet" href="CSS/allPages.css"> <!-- Llamar CSS -->
     <link rel="website icon" type="png" href="assets/image/logo.png"> <!-- Llamar logo pagina -->
 </head>
 <body>
-    <h1> CINE VIRTUAL</h1>
+    <!-- Encabezado -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Club de Cine Virtual</h1>
+        <p class="lead">¡Disfruta de una experiencia cinematográfica compartida en línea!</p>
+    </header>
     
+    <main>
+        <!-- Inicio Barra Navegador -->
+        <nav class="navbar bg-body-tertiary container">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:history.back()" > <i class="bi bi-skip-backward"></i> Regresar </a>
+                <a class="navbar-brand" href="index.html"><i class="bi bi-house-fill"></i> Menú </a>
+                <a class="navbar-brand" href=""><i class="bi bi-star"></i> Ver Cartelera</a>
+                <a class="navbar-brand" href=""><i class="bi bi-star"></i> Club Cine Virtual</a>
+                <a class="navbar-brand" href=""><i class="bi bi-star"></i> Preventas</a>
+                <a class="navbar-brand" href=""><i class="bi bi-star"></i> Foro</a>
+                <a class="navbar-brand" href=""><i class="bi bi-person-circle"></i>Iniciar Sesion</a>
+            </div>
+        </nav><br>
+        <!-- Fin Barra Navegador -->
+        <!-- Inicio Carrusel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/toy_story_5-wallpaper-1920x1080.jpg" class="container" alt="Sin Imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Toy Story</h5>
+                  <p>En un mundo donde los juguetes cobran vida cuando los humanos no miran, "Toy Story" nos lleva a la vida de Woody, un vaquero que es el juguete favorito de Andy.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/toy_story_5-wallpaper-1920x1080.jpg" class="container" alt="Sin Imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Toy Story</h5>
+                  <p>En un mundo donde los juguetes cobran vida cuando los humanos no miran, "Toy Story" nos lleva a la vida de Woody, un vaquero que es el juguete favorito de Andy.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/toy_story_5-wallpaper-1920x1080.jpg" class="container" alt="Sin Imagen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Toy Story</h5>
+                  <p>En un mundo donde los juguetes cobran vida cuando los humanos no miran, "Toy Story" nos lleva a la vida de Woody, un vaquero que es el juguete favorito de Andy.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div><br>
+          <!-- Fin Carrusel -->
+
+          
+    </main>
+       
+     <footer>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 Club de Cine Virtual. Todos los derechos reservados.</p>
+            <div>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+
+                  <!-- Sección de contacto -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    </footer>
 </body>
 </html>
